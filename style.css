@@ -797,3 +797,34 @@ a {
     text-align: center;
   }
 }
+/* TRAINER LOGIN LINK */
+.trainer-login {
+  display: inline-block;
+  background: transparent;
+  color: #5d8dff;
+  border: 1px solid #5d8dff;
+  border-radius: 9px;
+  padding: 11px 18px;
+  font-weight: 800;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+.trainer-login:hover {
+  background: #5d8dff;
+  color: #07101f;
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 600px) {
+  .trainer-login {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .nav-cta {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
