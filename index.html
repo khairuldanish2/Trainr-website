@@ -1,1 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainr — Find Your Fit</title>
+  <meta name="description" content="Find the fitness trainer that matches your goals, lifestyle and training style.">
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a href="#" class="logo">train<span>r.</span></a>
+
+    <div class="nav-links">
+      <a href="#discover">Find Trainers</a>
+      <a href="#how">How It Works</a>
+      <a href="#trainers">For Trainers</a>
+    </div>
+
+    <button class="nav-cta" onclick="openModal('client')">
+      Join Waitlist
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        <span class="dot"></span>
+        YOUR FITNESS. YOUR MATCH.
+      </div>
+
+      <h1>
+        YOUR GOALS.<br>
+        YOUR TRAINER.<br>
+        <span>YOUR TRAINR.</span>
+      </h1>
+
+      <p class="hero-description">
+        Finding the right coach shouldn't feel like a workout.
+        Discover trainers who match your goals, your style,
+        and your lifestyle.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#discover" class="btn-primary">Find Your Trainer ↗</a>
+        <button class="btn-secondary" onclick="openModal('trainer')">
+          I'm a Trainer
+        </button>
+      </div>
+
+      <p class="hero-note">
+        Built for every goal. Every level. Every journey.
+      </p>
+    </div>
+
+    <!-- APP PREVIEW -->
+    <div class="hero-visual">
+
+      <div class="glow"></div>
+
+      <div class="floating-card floating-top">
+        <strong>⚡ Smart matching</strong>
+        <small>Coaches matched to your goals</small>
+      </div>
+
+      <div class="phone">
+
+        <div class="phone-header">
+          <span>9:41</span>
+          <span>TRAINR ✦</span>
+          <span>●●●</span>
+        </div>
+
+        <div class="trainer-photo">
+          <div class="trainer-placeholder">🏋️‍♀️</div>
+
+          <div class="photo-overlay">
+            <h3>Sarah Lim, 28</h3>
+            <p>Strength & Conditioning Coach</p>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span>Strength</span>
+          <span>Powerlifting</span>
+          <span>Beginner Friendly</span>
+        </div>
+
+        <div class="phone-actions">
+          <button class="round-button pass" onclick="demoPass()">✕</button>
+          <span>DISCOVER</span>
+          <button class="round-button like" onclick="demoLike()">♥</button>
+        </div>
+
+        <div class="match-message" id="matchMessage">
+          Discover your next coach
+        </div>
+
+      </div>
+
+      <div class="floating-card floating-bottom">
+        <strong>♥ Your perfect fit</strong>
+        <small>Training made personal</small>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section container" id="how">
+
+    <div class="section-heading">
+      <div class="eyebrow">
+        <span class="dot"></span>
+        THE TRAINR DIFFERENCE
+      </div>
+
+      <h2>
+        Training starts with<br>
+        <span>the right match.</span>
+      </h2>
+
+      <p>
+        We make it easier to find the person who understands
+        your goals and gets you moving.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">✦</div>
+        <h3>Smart Matching</h3>
+        <p>
+          Find coaches based on your goals, preferences,
+          training experience, budget, and location.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">♥</div>
+        <h3>Find Your Fit</h3>
+        <p>
+          Discover trainers whose coaching style,
+          personality, and specialties fit your journey.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">↗</div>
+        <h3>Train Your Way</h3>
+        <p>
+          Connect with trainers for in-person sessions,
+          online coaching, or hybrid training.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRAINER DISCOVERY -->
+  <section class="section discover-section" id="discover">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">
+          <span class="dot"></span>
+          TRAINER DISCOVERY
+        </div>
+
+        <h2>
+          Meet your <span>potential match.</span>
+        </h2>
+
+        <p>
+          Explore trainers you could discover on Trainr.
+        </p>
+      </div>
+
+      <div class="trainer-grid">
+
+        <!-- TRAINER 1 -->
+        <div class="trainer-card">
+
+          <div class="trainer-image trainer-one">
+            <div class="trainer-emoji">🏋️‍♀️</div>
+            <div class="trainer-badge">TOP MATCH</div>
+          </div>
+
+          <div class="trainer-info">
+            <h3>Sarah Lim</h3>
+            <div class="trainer-meta">⭐ 4.9 · Kuala Lumpur</div>
+
+            <p>
+              Strength coach helping you build confidence,
+              strength, and sustainable habits.
+            </p>
+
+            <div class="specialties">
+              <span>Strength</span>
+              <span>Powerlifting</span>
+              <span>Beginner</span>
+            </div>
+
+            <div class="trainer-bottom">
+              <div class="price">
+                RM120 <small>/ session</small>
+              </div>
+
+              <button class="small-button" onclick="openModal('client')">
+                View Profile
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRAINER 2 -->
+        <div class="trainer-card">
+
+          <div class="trainer-image trainer-two">
+            <div class="trainer-emoji">🧘‍♀️</div>
+            <div class="trainer-badge">FLEXIBILITY</div>
+          </div>
+
+          <div class="trainer-info">
+            <h3>Michelle Tan</h3>
+            <div class="trainer-meta">⭐ 5.0 · Petaling Jaya</div>
+
+            <p>
+              Movement and mobility coach focused on feeling
+              better and moving freely.
+            </p>
+
+            <div class="specialties">
+              <span>Mobility</span>
+              <span>Pilates</span>
+              <span>Recovery</span>
+            </div>
+
+            <div class="trainer-bottom">
+              <div class="price">
+                RM100 <small>/ session</small>
+              </div>
+
+              <button class="small-button" onclick="openModal('client')">
+                View Profile
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRAINER 3 -->
+        <div class="trainer-card">
+
+          <div class="trainer-image trainer-three">
+            <div class="trainer-emoji">💪</div>
+            <div class="trainer-badge">PERFORMANCE</div>
+          </div>
+
+          <div class="trainer-info">
+            <h3>Daniel Wong</h3>
+            <div class="trainer-meta">⭐ 4.8 · Subang Jaya</div>
+
+            <p>
+              Performance coach for athletes, lifters,
+              and people ready to level up.
+            </p>
+
+            <div class="specialties">
+              <span>Hypertrophy</span>
+              <span>Sports</span>
+              <span>Nutrition</span>
+            </div>
+
+            <div class="trainer-bottom">
+              <div class="price">
+                RM150 <small>/ session</small>
+              </div>
+
+              <button class="small-button" onclick="openModal('client')">
+                View Profile
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section container">
+
+    <div class="section-heading">
+      <div class="eyebrow">
+        <span class="dot"></span>
+        SIMPLE BY DESIGN
+      </div>
+
+      <h2>
+        Four steps.<br>
+        <span>One stronger you.</span>
+      </h2>
+    </div>
+
+    <div class="steps-grid">
+
+      <div class="step">
+        <div class="step-number">01 / DISCOVER</div>
+        <h3>Tell us your goals</h3>
+        <p>
+          What do you want to achieve? Build muscle,
+          get stronger, improve mobility, or feel better?
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02 / MATCH</div>
+        <h3>Find your coach</h3>
+        <p>
+          Discover trainers that fit your goals,
+          preferences, and lifestyle.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03 / CONNECT</div>
+        <h3>Make it personal</h3>
+        <p>
+          Connect with your trainer, discuss your goals,
+          and decide how you want to train.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04 / TRAIN</div>
+        <h3>Start your journey</h3>
+        <p>
+          Build consistency, work towards your goals,
+          and celebrate every milestone.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOR TRAINERS -->
+  <section class="section container" id="trainers">
+
+    <div class="trainer-cta">
+
+      <div class="trainer-cta-content">
+
+        <div class="eyebrow">
+          <span class="dot"></span>
+          FOR FITNESS PROFESSIONALS
+        </div>
+
+        <h2>
+          More clients.<br>
+          Less searching.
+        </h2>
+
+        <p>
+          Trainr connects coaches with people who are actively
+          looking for the right trainer. Spend less time finding
+          clients and more time doing what you do best.
+        </p>
+
+        <button class="btn-primary" onclick="openModal('trainer')">
+          Join as a Trainer ↗
+        </button>
+
+      </div>
+
+      <div class="benefits-grid">
+
+        <div class="benefit">
+          <span>✦</span> Reach new clients
+        </div>
+
+        <div class="benefit">
+          <span>✦</span> Showcase your expertise
+        </div>
+
+        <div class="benefit">
+          <span>✦</span> Find clients that fit
+        </div>
+
+        <div class="benefit">
+          <span>✦</span> Grow your business
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer container">
+    <div class="footer-logo">train<span>r.</span></div>
+    <p>Find your fit. Find your trainer.</p>
+    <p>© 2026 Trainr · Prototype</p>
+  </footer>
+
+  <!-- WAITLIST MODAL -->
+  <div class="modal" id="waitlistModal">
+
+    <div class="modal-content">
+
+      <button class="close-button" onclick="closeModal()">×</button>
+
+      <h2 id="modalTitle">Find your Trainr.</h2>
+
+      <p id="modalDescription">
+        Be among the first to discover coaches who match your goals.
+      </p>
+
+      <div class="success-message" id="successMessage">
+        You're on the list! 🎉
+        <br>
+        This is currently a prototype signup.
+        Your information is not being sent anywhere yet.
+      </div>
+
+      <form id="waitlistForm" onsubmit="submitForm(event)">
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Your name"
+          required
+        >
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Email address"
+          required
+        >
+
+        <select id="userRole">
+          <option value="client">I'm looking for a trainer</option>
+          <option value="trainer">I'm a fitness trainer</option>
+        </select>
+
+        <button type="submit" class="btn-primary full-width">
+          Join the Waitlist →
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
